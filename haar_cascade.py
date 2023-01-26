@@ -9,7 +9,7 @@ im= cv.imread('mor_teams5.jpg')
 gray = cv.cvtColor(im, cv.COLOR_BGR2GRAY)
 cv.imshow('Gray Image', gray)
 
-haar_cascade_modele = cv.CascadeClassifier('haar_face.xml')
+haar_cascade_modele = cv.CascadeClassifier('haar_face.xml')   #for run this app you should to download this file ('haar_face.xml')
 
 faces_r = haar_cascade_modele.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=11)
 
